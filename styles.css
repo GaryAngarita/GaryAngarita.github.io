@@ -16,6 +16,11 @@
 h1{
     font-size: 50px;
 }
+
+svg{
+    color: black;
+}
+
 h2{
     margin: 5px;
 }
