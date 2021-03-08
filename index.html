@@ -12,7 +12,7 @@
     <title>Resume Display</title>
     <script>
         $(document).ready(function(){
-            $('.experience, .education, .employment').hide();
+            $('.experience, .row, .employment').hide();
 
             $('#exp').click(function(){
                 $('.experience').toggle();
@@ -21,8 +21,9 @@
                 $('.employment').toggle();
             })
             $('#edu').click(function(){
-                $('.education').toggle();
+                $('.row').toggle();
             })
+            
         })
 
 
@@ -125,8 +126,21 @@
                     Middle School Math/Science Teacher. Created lesson plans, coordinated with department 
                     heads, and maintained testing statistics through 36 weeks of forecasted planning.</li>
                 <li><span class="date">Sep 2003 - Apr 2016</span> - <span class="job_title">US Army</span>Served 
-                    as Pilot, Tactical Operations Officer, </li>
+                    as Pilot, Tactical Operations Officer, Squad Leader, and Physical Training Officer. Taught 
+                    classes to groups ranging from 20-100 Soldiers in topics ranging from aerodynamics and flight 
+                    operations to aircraft software and flight tactics.</li>
             </ul>
+        </div>
+        <h2 id="edu">Education</h2>
+        <div class="container">
+            <div class="row">
+                        <div class="col-9">Coding Dojo Bootcamp</div>
+                        <div class="col-3"> Jan 2021 - Jul 2021</div>
+                        <div class="col-9">Embry-Riddle Aeronautical University - Master's of Science in Aeronautics</div>
+                        <div class="col-3">Jul 2020 - </div>
+                        <div class="col-9">Embry-Riddle Aeronautical University - Graduated Magna Cum Laude Bachelor's of Science in Aeronautics</div>
+                        <div class="col-3">Jan 2014 - May 2018</div>
+            </div>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
