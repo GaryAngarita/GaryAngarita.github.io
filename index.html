@@ -33,7 +33,7 @@
                     message: 'Check this out!'
                 };
 
-                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', this)
+                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', templateParams, this)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
