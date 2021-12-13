@@ -30,10 +30,10 @@
                 var templateParams = {
                     from_name: 'James',
                     from_email: 'james@xyz.com',
-                    notes: 'Check this out!'
+                    message_html: 'Check this out!'
                 };
 
-                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', templateParams, this)
+                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', templateParams)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
