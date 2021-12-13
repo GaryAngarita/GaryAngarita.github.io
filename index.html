@@ -12,35 +12,28 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-    ></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function () {
-        // https://dashboard.emailjs.com/admin/integration
-        emailjs.init("YOUR_USER_ID");
-      })();
+        (function() {
+            // https://dashboard.emailjs.com/admin/integration
+            emailjs.init('user_I2PExYLXuacFWfQFXczSS');
+        })();
     </script>
     <script type="text/javascript">
-      window.onload = function () {
-        document
-          .getElementById("contact-form")
-          .addEventListener("submit", function (event) {
-            event.preventDefault();
-            // generate a five digit number for the contact_number variable
-            this.contact_number.value = (Math.random() * 100000) | 0;
-            // these IDs from the previous steps
-            emailjs.sendForm("contact_service", "contact_form", this).then(
-              function () {
-                console.log("SUCCESS!");
-              },
-              function (error) {
-                console.log("FAILED...", error);
-              }
-            );
-          });
-      };
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // generate a five digit number for the contact_number variable
+                this.contact_number.value = Math.random() * 100000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(function() {
+                        console.log('SUCCESS!');
+                    }, function(error) {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
     </script>
     <link rel="stylesheet" href="style.css"/>
   </head>
@@ -63,19 +56,17 @@
               href="#"
               role="button"
               aria-expanded="false"
-              >Media</a
-            >
+              >Media</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="#github">GitHub</a></li>
               <li><a class="dropdown-item" href="#linkedin">LinkedIn</a></li>
-              <li>
+              <!-- <li>
                 <hr class="dropdown-divider" />
               </li>
               <li>
                 <a class="dropdown-item" href="#scrollspyHeading5"
-                  >Recommendations</a
-                >
-              </li>
+                  >Recommendations</a>
+              </li> -->
             </ul>
           </li>
           <li class="nav-item">
@@ -84,33 +75,6 @@
         </ul>
       </nav>
 
-      <!-- <div id="header">
-      <div id="navbar">
-        <strong class="nav float-start">Gary Angarita</strong>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/about">About</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-              aria-expanded="false">Projects</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="/resume/">Resume Display</a></li>
-              <li><a class="dropdown-item" href="/farming/">Farming Economy</a></li>
-              <li><a class="dropdown-item" href="#">Quiz Whiz</a></li>
-             <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Separated link</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/media">Media</a>
-          </li>
-        </ul>
-      </div>
-    </div> -->
       <div
         id="intro_pic"
         style="background-image: url('america.jpg')"
@@ -121,8 +85,7 @@
             id="profile_pic"
             src="FB_IMG_1507835697822~2.jpg"
             class="figure-img img-fluid"
-            alt="Gary's Profile Pic"
-          />
+            alt="Gary's Profile Pic"/>
         </div>
         <div class="pic">
           <p>Programming for a Change</p>
