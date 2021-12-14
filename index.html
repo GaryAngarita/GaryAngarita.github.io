@@ -27,13 +27,7 @@
                 this.contact_number.value = Math.random() * 100000 | 0;
                 // these IDs from the previous steps
 
-                var templateParams = {
-                    from_name: 'James',
-                    reply_to: 'james@xyz.com',
-                    message: 'Check this out!'
-                };
-
-                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', templateParams)
+                emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', this)
                     .then(function() {
                         console.log('SUCCESS!');
                     }, function(error) {
