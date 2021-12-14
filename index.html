@@ -36,6 +36,7 @@
             });
         }
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <link rel="stylesheet" href="style.css"/>
   </head>
 
@@ -404,6 +405,11 @@
               <div id="email_button">
                 <input class="btn btn-outline-danger" type="submit" value="Send" />
               </div>
+            </form>
+            <form action="?" method="POST">
+              <div class="g-recaptcha" data-sitekey="6Le_-J4dAAAAACSIyZDkwRUqR_-08NbS2T3SFkbQ"></div>
+              <br/>
+              <input type="submit" value="Submit">
             </form>
           </div>
         </div>
