@@ -29,6 +29,7 @@
 
                 emailjs.sendForm('service_w9dxlh6', 'template_yeuu8qa', this)
                     .then(function() {
+                        alert('Your email has been sent');
                         console.log('SUCCESS!');
                     }, function(error) {
                         console.log('FAILED...', error);
