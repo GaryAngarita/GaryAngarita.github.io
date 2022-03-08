@@ -69,8 +69,6 @@ body{
     height: 60px;
     background-color: blue;
     text-align: center;
-    display: flex;
-    place-content: center;
     margin: 0px auto;
     text-shadow: -1px 1px 1px whitesmoke, 1px 1px 1px seashell, 1px -1px 0 whitesmoke, -1px -1px 0 seashell;
 }
@@ -92,7 +90,7 @@ body{
 
 #about{
     padding-top: 20px;
-    height: 760px;
+    height: 160px;
 }
 
 #resume{
@@ -241,5 +239,1005 @@ svg{
     text-align: center;
 }
 
+/* START OF MEDIA QUERIES */
 
+@media all and (max-width: 961px) {
+    body{
+        position: relative;
+        /* background: #222; */
+        margin: 0;
+    }
+    
+    #navbar-example2{
+        background-color: redpyth;
+    }
+    
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar-brand{
+        padding-left: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+    
+    #intro_pic{
+        padding-top: 25px;
+    }
+    
+    #profile_pic{
+        border-radius: 40%;
+    }
+    
+    .pic p{
+        color: yellow;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+    
+    .pic{
+        display: flex;
+        place-content: center;
+    }
+    
+    .bg{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #projects img{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+    
+    #projects{    
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        height: 1100px;
+        width: 100%;
+    }
+    
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        margin: 0px auto;
+        text-shadow: -1px 1px 1px whitesmoke, 1px 1px 1px seashell, 1px -1px 0 whitesmoke, -1px -1px 0 seashell;
+    }
+    
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    #about h1, #about p{
+        text-align: center;
+    }
+    
+    #about{
+        padding-top: 20px;
+        height: 210px;
+    }
+    
+    #resume{
+        display: inline-block;
+        place-content: center;
+        background-color: rgb(214, 203, 186);
+        padding-top: 20px;
+        height: 1100px;
+    }
+    
+    strong{
+        display: flex;
+        place-content: center;
+        font-size: larger;
+    }
+    
+    span{
+        font-style: oblique;
+        font-weight: bold;
+    }
+    
+    svg{
+        color: black;
+    }
+    #experience, #right_side{
+        display: inline-block;
+        margin: 15px;
+    }
+    
+    #experience{
+        width: 100%;
+        height: 300px;
+    }
+    
+    #right_side{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #education p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    #skills{
+        margin: 0px;
+    }
+    
+    #skills ul{
+        list-style-type:square;
+    }
+    
+    #skill_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #skills1, #skills2{
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+    }
+    
+    #add_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #additional ul {
+        list-style: square;
+    }
+    
+    .rollies{
+        padding: 15px 0 15px 0;
+    }
+    
+    #social_media{
+        height: 425px;
+    }
+    
+    #media{
+        display: flex;
+        place-content: center;
+    }
+    
+    #media h2{
+        text-align: center;
+    }
+    
+    #soc_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+    
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+        border: 1px solid black;
+    }
+    
+    #contact{
+        background-color: black;
+        color: white;
+        height: 450px;
+    }
+    
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    #types{
+        display: flex;
+        place-content: center;
+    }
+    
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    .con_form{
+        width: 236px;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    #address h2, #address p{
+        text-align: center;
+    }
+    
+    #add_content{
+        padding-top: 24px;
+    }
+    
+    #email_button{
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 641px) {
+    body{
+        position: relative;
+        /* background: #222; */
+        margin: 0;
+    }
+    
+    #navbar-example2{
+        background-color: redpyth;
+    }
+    
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar-brand{
+        padding-left: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+    
+    #intro_pic{
+        padding-top: 25px;
+    }
+    
+    #profile_pic{
+        border-radius: 40%;
+    }
+    
+    .pic p{
+        color: yellow;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+    
+    .pic{
+        display: flex;
+        place-content: center;
+    }
+    
+    .bg{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #projects img{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+    
+    #projects{    
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        height: 1100px;
+        width: 100%;
+    }
+    
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        margin: 0px auto;
+        text-shadow: -1px 1px 1px whitesmoke, 1px 1px 1px seashell, 1px -1px 0 whitesmoke, -1px -1px 0 seashell;
+    }
+    
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    #about h1, #about p{
+        text-align: center;
+    }
+    
+    #about{
+        padding-top: 20px;
+        height: 210px;
+    }
+    
+    #resume{
+        display: inline-block;
+        place-content: center;
+        background-color: rgb(214, 203, 186);
+        padding-top: 20px;
+        height: 1100px;
+    }
+    
+    strong{
+        display: flex;
+        place-content: center;
+        font-size: larger;
+    }
+    
+    span{
+        font-style: oblique;
+        font-weight: bold;
+    }
+    
+    svg{
+        color: black;
+    }
+    #experience, #right_side{
+        display: inline-block;
+        margin: 15px;
+    }
+    
+    #experience{
+        width: 100%;
+        height: 300px;
+    }
+    
+    #right_side{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #education p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    #skills{
+        margin: 0px;
+    }
+    
+    #skills ul{
+        list-style-type:square;
+    }
+    
+    #skill_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #skills1, #skills2{
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+    }
+    
+    #add_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #additional ul {
+        list-style: square;
+    }
+    
+    .rollies{
+        padding: 15px 0 15px 0;
+    }
+    
+    #social_media{
+        height: 425px;
+    }
+    
+    #media{
+        display: flex;
+        place-content: center;
+    }
+    
+    #media h2{
+        text-align: center;
+    }
+    
+    #soc_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+    
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+        border: 1px solid black;
+    }
+    
+    #contact{
+        background-color: black;
+        color: white;
+        height: 450px;
+    }
+    
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    #types{
+        display: flex;
+        place-content: center;
+    }
+    
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    .con_form{
+        width: 236px;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    #address h2, #address p{
+        text-align: center;
+    }
+    
+    #add_content{
+        padding-top: 24px;
+    }
+    
+    #email_button{
+        text-align: center;
+    }
+}
+
+@media all and (max-width: 481px) {
+    body{
+        position: relative;
+        /* background: #222; */
+        margin: 0;
+    }
+    
+    #navbar-example2{
+        background-color: redpyth;
+    }
+    
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar-brand{
+        padding-left: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+    
+    #intro_pic{
+        padding-top: 25px;
+    }
+    
+    #profile_pic{
+        border-radius: 40%;
+    }
+    
+    .pic p{
+        color: yellow;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+    
+    .pic{
+        display: flex;
+        place-content: center;
+    }
+    
+    .bg{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #projects img{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+    
+    #projects{    
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        height: 1100px;
+        width: 100%;
+    }
+    
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        display: flex;
+        place-content: center;
+        margin: 0px auto;
+        text-shadow: -1px 1px 1px whitesmoke, 1px 1px 1px seashell, 1px -1px 0 whitesmoke, -1px -1px 0 seashell;
+    }
+    
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    #about h1, #about p{
+        text-align: center;
+    }
+    
+    #about{
+        padding-top: 20px;
+        height: 210px;
+    }
+    
+    #resume{
+        display: inline-block;
+        place-content: center;
+        background-color: rgb(214, 203, 186);
+        padding-top: 20px;
+        height: 1100px;
+    }
+    
+    strong{
+        display: flex;
+        place-content: center;
+        font-size: larger;
+    }
+    
+    span{
+        font-style: oblique;
+        font-weight: bold;
+    }
+    
+    svg{
+        color: black;
+    }
+    #experience, #right_side{
+        display: inline-block;
+        margin: 15px;
+    }
+    
+    #experience{
+        width: 100%;
+        height: 300px;
+    }
+    
+    #right_side{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #education p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    #skills{
+        margin: 0px;
+    }
+    
+    #skills ul{
+        list-style-type:square;
+    }
+    
+    #skill_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #skills1, #skills2{
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+    }
+    
+    #add_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #additional ul {
+        list-style: square;
+    }
+    
+    .rollies{
+        padding: 15px 0 15px 0;
+    }
+    
+    #social_media{
+        height: 425px;
+    }
+    
+    #media{
+        display: flex;
+        place-content: center;
+    }
+    
+    #media h2{
+        text-align: center;
+    }
+    
+    #soc_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+    
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+        border: 1px solid black;
+    }
+    
+    #contact{
+        background-color: black;
+        color: white;
+        height: 450px;
+    }
+    
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    #types{
+        display: flex;
+        place-content: center;
+    }
+    
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    .con_form{
+        width: 236px;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    #address h2, #address p{
+        text-align: center;
+    }
+    
+    #add_content{
+        padding-top: 24px;
+    }
+    
+    #email_button{
+        text-align: center;
+    }
+
+}
+
+@media all and (max-width: 380px) {
+    body{
+        position: relative;
+        /* background: #222; */
+        margin: 0;
+    }
+    
+    #navbar-example2{
+        background-color: redpyth;
+    }
+    
+    #navbar{
+        height: 50px;
+        background-color: red;
+        padding-right: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .navbar-brand{
+        padding-left: 50px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 25px;
+    }
+    
+    .float-start{
+        padding: 10px 0 0 20px;
+    }
+    
+    #intro_pic{
+        padding-top: 25px;
+    }
+    
+    #profile_pic{
+        border-radius: 40%;
+    }
+    
+    .pic p{
+        color: yellow;
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 30px;
+        font-style: oblique;
+    }
+    
+    .pic{
+        display: flex;
+        place-content: center;
+    }
+    
+    .bg{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    
+    #projects img{
+        border: 1px solid black;
+        width: 350px;
+        height: 250px;
+    }
+    
+    #projects{    
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        place-content: center;
+        background-color: blue;
+        height: 1100px;
+    }
+    
+    #scrollspyHeading1{
+        height: 60px;
+        background-color: blue;
+        text-align: center;
+        margin: 0px auto;
+        text-shadow: -1px 1px 1px whitesmoke, 1px 1px 1px seashell, 1px -1px 0 whitesmoke, -1px -1px 0 seashell;
+    }
+    
+    .proj_one, .proj_two, .proj_three{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    #projects p{
+        word-wrap: break-word;
+        text-align: center;
+        color: whitesmoke;
+    }
+    
+    #about h1, #about p{
+        text-align: center;
+    }
+    
+    #about{
+        padding-top: 20px;
+        height: 210px;
+    }
+    
+    #resume{
+        display: inline-block;
+        place-content: center;
+        background-color: rgb(214, 203, 186);
+        padding-top: 20px;
+        height: 1100px;
+    }
+    
+    strong{
+        display: flex;
+        place-content: center;
+        font-size: larger;
+    }
+    
+    span{
+        font-style: oblique;
+        font-weight: bold;
+    }
+    
+    svg{
+        color: black;
+    }
+    #experience, #right_side{
+        display: inline-block;
+        margin: 15px;
+    }
+    
+    #experience{
+        width: 100%;
+        height: 300px;
+    }
+    
+    #right_side{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #education p{
+        text-align: center;
+        margin: 0px;
+    }
+    
+    #skills{
+        margin: 0px;
+    }
+    
+    #skills ul{
+        list-style-type:square;
+    }
+    
+    #skill_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #skills1, #skills2{
+        display: inline-block;
+        width: 150px;
+        height: 80px;
+    }
+    
+    #add_list{
+        display: flex;
+        place-content: center;
+    }
+    
+    #additional ul {
+        list-style: square;
+    }
+    
+    .rollies{
+        padding: 15px 0 15px 0;
+    }
+    
+    #social_media{
+        height: 425px;
+    }
+    
+    #media{
+        display: flex;
+        place-content: center;
+    }
+    
+    #media h2{
+        text-align: center;
+    }
+    
+    #soc_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    .icons{
+        display: flex;
+        place-content: center;
+    }
+    
+    #github, #linkedin{
+        width: 250px;
+        height: 200px;
+        padding: 25px;
+        border: 1px solid black;
+    }
+    
+    #contact{
+        background-color: black;
+        color: white;
+        height: 450px;
+    }
+    
+    #cont_title h1{
+        display: flex;
+        place-content: center;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    
+    #types{
+        display: flex;
+        place-content: center;
+    }
+    
+    #address, #email{
+        width: 236px auto;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    .con_form{
+        width: 236px;
+        height: 250px;
+        padding: 0px 20px 0px 20px;
+    }
+    
+    #address h2, #address p{
+        text-align: center;
+    }
+    
+    #add_content{
+        padding-top: 24px;
+    }
+    
+    #email_button{
+        text-align: center;
+    }
+
+}
 /* style="background-image: url('{{ user.picture.img.url }}');" id="bg" */
